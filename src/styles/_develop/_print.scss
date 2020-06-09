@@ -1,0 +1,30 @@
+/* ------------------------
+  print
+------------------------ */
+@media print {
+  body {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100% !important;
+    background: none;
+    color: #000;
+    font-family: sans-serif; // Adjusted for Japanese
+    font-size: 18px;
+  }
+
+  * {
+    background: none !important;
+    color: #000 !important;
+  }
+
+  /* Links */
+  a {
+    &:link,
+    &:active,
+    &:visited,
+    &:hover {
+      text-decoration: none;
+      color: #000;
+    }
+  }
+}

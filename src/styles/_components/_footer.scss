@@ -1,0 +1,20 @@
+/* ------------------------
+  footer
+------------------------ */
+
+.footer {
+  font-size: 4rem;
+}
+
+.footer_note {
+  display: flex;
+  margin-top: 0.5em;
+  font-size: 2rem;
+
+  flex-wrap: wrap;
+  li {
+    &:not(:last-of-type) {
+      margin-right: 0.5em;
+    }
+  }
+}

@@ -1,0 +1,20 @@
+/* ------------------------
+  color
+------------------------ */
+
+$color-white: #fff;
+$color-black: #000;
+
+// font
+$base-font-color: $color-black;
+
+// link
+$base-link-color-link: $color-black;
+$base-link-color-active: $color-black;
+$base-link-color-hover: $color-black;
+$base-link-color-visited: $color-black;
+
+// background
+$base-background-color: #7fb10f;
+$base-selection-background-color: $color-black; // The background of the selected text.
+$base-selection-color: $color-white; // Text color of the selected text.

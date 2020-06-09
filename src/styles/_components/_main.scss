@@ -1,0 +1,31 @@
+/* ------------------------
+  main
+------------------------ */
+
+.main {
+  margin-top: 30px;
+}
+
+.listWrap {
+  display: flex;
+
+  flex-wrap: wrap;
+  @include min-screen(md) {
+    margin: 0 20px;
+  }
+  li {
+    padding: 20px;
+
+    img {
+      width: 110px;
+    }
+    a {
+      display: block;
+      &:active,
+      &:hover {
+        margin: -10px;
+        border: 10px solid $color-black;
+      }
+    }
+  }
+}

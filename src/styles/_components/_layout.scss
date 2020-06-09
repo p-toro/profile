@@ -1,0 +1,27 @@
+/* ------------------------
+  layout
+------------------------ */
+.wrapper {
+  display: grid;
+  margin: 0 auto;
+  padding: 30px;
+  max-width: 900px;
+  min-height: 100vh;
+
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: "header header"
+  "main main"
+  "footer footer";
+}
+
+.header {
+  grid-area: header;
+}
+
+.main {
+  grid-area: main;
+}
+
+.footer {
+  grid-area: footer;
+}

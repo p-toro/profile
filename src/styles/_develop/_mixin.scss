@@ -1,0 +1,43 @@
+/* ------------------------
+  mixin
+------------------------ */
+
+// media query
+@mixin min-screen($breakpoint) {
+  @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+// svg responsive
+@mixin responsive-svg($width,$height) {
+  position: relative;
+  padding-top: ($height/$width)*100%;
+  img[src$=".svg"] {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+// clearfix
+@mixin clearfix {
+  &::after {
+    content: "";
+    display: block;
+    clear: both;
+  }
+}
+
+// link color
+@mixin link-color($base-color,$hover-color) {
+  color: $base-color;
+  &:link {
+    color: $base-color;
+  }
+  &:active,
+  &:hover,
+  &:visited {
+    color: $hover-color;
+  }
+}

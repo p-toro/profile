@@ -1,0 +1,9 @@
+/* ------------------------
+  breakpoint
+------------------------ */
+
+$breakpoints: (
+  sm: 0, // smart phone
+  md: 768px, // Tablet (iPad) and above
+  lg: 960px // PC Design Comping Width
+) !default;

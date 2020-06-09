@@ -1,0 +1,13 @@
+/* ------------------------
+  font
+------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+$light: 300;
+$regular: 400;
+$medium: 500;
+$semi-bold: 600;
+$bold: 700;
+$font-smoothing: antialiased; //antialiased, subpixel-antialiased（safari）, none
+$base-font-family: "VT323", monospace;
+$base-line-height: 1;

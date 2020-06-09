@@ -1,0 +1,50 @@
+/* ------------------------
+  base settings
+------------------------ */
+
+html {
+  font-size: 62.5%; // Set the root font size to 10px.
+}
+
+body {
+  background-color: $base-background-color;
+  word-wrap: break-word;
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: 1.6em; // Set the root font size to the same size as 16px. em is a bug fix for Chrome.
+  font-weight: $medium;
+  line-height: $base-line-height;
+  -webkit-font-smoothing: $font-smoothing;
+  -webkit-text-size-adjust: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: $base-link-color-link;
+  &:visited {
+    color: $base-link-color-visited;
+  }
+  &:hover {
+    color: $base-link-color-hover;
+  }
+  &:active {
+    color: $base-link-color-active;
+  }
+}
+
+::-moz-selection {
+  background-color: $base-selection-background-color;
+  color: $base-selection-color;
+  text-shadow: none;
+}
+
+::selection {
+  background-color: $base-selection-background-color;
+  color: $base-selection-color;
+  text-shadow: none;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
