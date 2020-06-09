@@ -27,11 +27,17 @@ module.exports = {
     },
     `gatsby-plugin-sass`,
     {
-      resolve: "gatsby-source-contentful",
+      resolve: `gatsby-source-contentful`,
       options: {
         spaceId: process.env.GATSBY_SPACE_ID,
         accessToken: process.env.GATSBY_ACCESS_TOKEN,
       },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: `UA-155313825-1`
+      }
     },
   ],
 }
