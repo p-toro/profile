@@ -7,7 +7,7 @@ module.exports = {
     title: `p_toro（ピートロ）自己紹介`,
     description: `Web制作業にたずさわる老害ヒゲメガネジロリアン。禁煙（2008〜）に続き禁酒（2020〜）を決意。映画と読書とラジオとアニメと散歩とラーメンとカレーを愛する無能の人。`,
     author: `@p_toro`,
-    image: `${__dirname}/src/images/ico_me.png`
+    image: `src/images/ico_me.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
