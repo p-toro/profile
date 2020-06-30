@@ -4,7 +4,8 @@ JAMStack(Gatsby, Contentful, Netlify)
 ## Usage
 ```bash
 yarn
-yarn start
+gatsby develop（yarn start）
+gatsby build
 ```
 
 ## Note

@@ -12,6 +12,7 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
@@ -25,8 +26,9 @@ function SEO({ description, lang, meta, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
+      title={site.siteMetadata.title}
+      // title={title}
+      // titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
@@ -43,6 +45,10 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: site.siteMetadata.image,
         },
         {
           name: `twitter:card`,
@@ -68,7 +74,7 @@ function SEO({ description, lang, meta, title }) {
 SEO.defaultProps = {
   lang: `ja`,
   meta: [],
-  description: ``,
+  description: ``
 }
 
 SEO.propTypes = {

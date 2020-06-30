@@ -24,7 +24,7 @@ const IndexPage = () => {
   return (
     <div className="wrapper">
       <Layout>
-        <SEO title="Top" />
+        <SEO />
         <ul className="listWrap" id="js-listWrap">
           {data.allContentfulSns.edges.map(({ node }) => (
             <li>
